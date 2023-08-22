@@ -1,0 +1,24 @@
+.about {
+   padding-bottom: 10rem;
+
+    &_grid {
+
+        & div {
+            padding-bottom: 4rem;
+        }
+
+        @include atMedium {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10rem;
+
+            & div {
+                margin-right: 5rem;
+            }
+
+            & img {
+                padding-top: 2rem;
+            }
+        }  
+    }
+}

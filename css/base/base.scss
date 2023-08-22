@@ -1,0 +1,99 @@
+/************************************* IMPORTING FONTS *******************************************/
+
+@font-face {
+    font-family: "Futura PT Bold"; 
+    src:    url("../fonts/FuturaPT-Bold.eot");
+    src:    url("../fonts/FuturaPT-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura PT Normal"; 
+    src:    url("../fonts/Futura-PT-Web-Book.eot");
+    src:    url("../fonts/Futura-PT-Web-Book.ttf") format("truetype"),
+            url("../fonts/Futura-PT-Web-Book.otf") format("otf");
+
+}
+
+/************************************* BASE *******************************************/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 10px = 1rem! */
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 0 !important;
+    background-color: $black;
+    color: $white;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-family: $textFont;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: $textFont;
+    font-size: 16px;
+}
+
+br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 3rem; /* change this to whatever height you want it */
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+
+    @include atMedium {
+        max-width: 140rem; /** 1400px **/
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/************************************* HEADINGS *******************************************/
+
+h1 {
+    color: $primaryBlue;
+    font-family: $headingFont;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 !important;
+}
+
+ h2, h3, h4, h5 {
+    text-transform: uppercase;
+    margin: 0 !important;
+    font-family: $futuraNormal;
+    letter-spacing: 0.2em;
+}

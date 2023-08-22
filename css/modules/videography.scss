@@ -1,0 +1,21 @@
+.videography {
+    padding-top: 10rem;
+
+    &_grid {
+
+        & div {
+            padding-bottom: 4rem;
+    
+        }
+
+        @include atMedium {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10rem;
+    
+            & :nth-child(2) {
+                padding-top: 2rem;
+            }
+        }
+    }
+}

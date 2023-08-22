@@ -1,0 +1,20 @@
+{
+  "name": "riftstudios",
+  "version": "1.0.0",
+  "description": "Rift Studios WordPress Theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Blake Bolton",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^19.2.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+.rates {
+    padding: 10rem 0;
+    &_grid {
+
+        @include atMedium {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 2rem;
+
+            &_rates {
+                grid-column: 1 / 2;
+            }
+
+            &_location {
+                grid-column: 2 / 3;
+            }
+        }
+        
+
+    }
+}

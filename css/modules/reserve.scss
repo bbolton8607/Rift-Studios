@@ -1,0 +1,84 @@
+.reserve {
+    background-color: $primaryBlue;
+    background-image: url("/img/reserve_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 2rem 0;
+
+    &_grid {
+        text-align: center;
+
+        & img {
+            width: 50%;
+            @include atMedium {
+                width: 75%;
+            }
+        }
+        
+        @include atMedium {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 8rem;
+            text-align: left;
+            align-items: center;
+            padding: 5rem 0; 
+        } 
+        
+        &_content {
+
+            & h1 {
+                font-size: 25px;
+                margin: 0;
+                
+                @include atSmall {
+                    font-size: 30px;
+                }
+            }
+
+            & p {
+                font-size: 14px;
+                
+                @include atSmaller {
+                    font-size: 16px;
+                    
+                }
+
+                @include atMedium {
+                    margin-right: 20rem;
+                }
+            }
+
+            &_br {
+                margin: 0;
+            }
+
+            & div a button{
+                // padding: 1rem 10rem;
+            }
+
+            @include atMedium {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 45px);
+                align-items: center;
+                padding-top: 1rem;
+    
+                & :nth-child(1) {
+                    grid-row: 1 / 2;
+                }
+
+                & :nth-child(2) {
+                    grid-row: 3 / 5;
+                    padding-bottom: 5rem; 
+                }
+
+                & :nth-child(3) {
+                    grid-row: 5 / 7;
+                    
+                }
+            }  
+        }
+    }
+}
